@@ -8,7 +8,7 @@
 
     <div class="col-md-6">
 
-      <form action="/coasters/new" method="POST">
+      <form action="/coasters/edit?id={{coaster.id}}" method="POST">
         <div class="form-group">
           <label for="name-input">Nombre</label>
           <input name="name" type="text" class="form-control" id="name-input" value="{{coaster.name}}">
@@ -39,7 +39,7 @@
           </select>
         </div>
 
-        <button type="submit" class="btn btn-dark">Crear montaña rusa</button>
+        <button type="submit" class="btn btn-dark">Editar montaña rusa</button>
         <a href="/coasters" class="btn btn-dark">Volver</a>
 
       </form>

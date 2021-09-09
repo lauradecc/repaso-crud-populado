@@ -62,6 +62,19 @@ router.get('/edit', (req, res) => {
 })
 
 
+router.post('/edit', (req, res) => {
+
+    const { id } = req.query
+
+    const { name, description, inversions, length, park_id } = req.body
+
+    Coaster
+        .findByIdAndUpdate(id, { name, description, inversions, length, park_id })
+        .then(() => res.redirect(`/coasters/${id}`))
+        .catch(err => console.log(err))
+})
+
+
 router.get('/:id', (req, res) => {
 
     const { id } = req.params
