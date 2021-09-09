@@ -10,3 +10,8 @@ body {
 .coaster-btn {
   margin-left: 15px;
 }
+
+.errorMessage {
+   color: red;
+   margin-top: 10px;
+}

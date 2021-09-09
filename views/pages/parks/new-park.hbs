@@ -20,6 +20,11 @@
 
         <button type="submit" class="btn btn-dark">Crear parque</button>
       </form>
+
+      {{#if errorMsg}}
+        <p class="errorMessage">{{errorMsg}}</p>
+      {{/if}}
+
     </div>
 
   </div>
